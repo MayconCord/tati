@@ -1,0 +1,116 @@
+.pokemon-card {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+.pokemon-image {
+    width: 70px;
+    height: 70px;
+    margin: 12px;
+    justify-content: space-between;
+}
+
+.pokemon-image-container {
+    padding: 0px 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+    text-transform: capitalize;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon-type {
+    display: flex;
+}
+
+.pokemon-type-text {
+    margin-right: 10px;
+    text-transform: capitalize;
+}
+
+.steel {
+	background-color: #f4f4f4;
+}
+
+.fire {
+    background: linear-gradient(to right,  #ff7070,  #ff8b5d);
+}
+
+.grass {
+    background: linear-gradient(to right,  #5ffc6a,  #c6ff7c);
+}
+
+.electric {
+    background: linear-gradient(to right, #ffeb84, #ffdf41);
+
+}
+
+.water, .ice {
+    background: linear-gradient(to right, #80acff, #dbe7ff);
+}
+
+.ground {
+    background: linear-gradient(to right, #ffc992, #bd7c3c);
+}
+
+.rock {
+    background: linear-gradient(to right, #a1a19a, #ccccb9);
+}
+
+.fairy {    
+    background: linear-gradient(to right, #f4b4ff, #e88ef8);
+}
+
+.poison {
+    background: linear-gradient(to right, #d979ff, #c739ff);
+}
+
+.bug {
+    background: linear-gradient(to right, #f8d5a3, #ffba58);
+}
+
+.dragon {
+    background: linear-gradient(to right, #97b3e6, #c6daff);
+}
+
+.psychic {
+    background: linear-gradient(to right, #ff88e1, #ff62d8);
+}
+
+.flying {
+    background: linear-gradient(to right, #F5F5F5, #d6d3d3);
+}
+
+.fighting {
+    background: linear-gradient(to right, #18253d, #254070);
+    color: white;
+}
+
+.ghost {
+    background-color: #18253d;
+    background: linear-gradient(to right, #53163c, #a03376);
+    color: white;
+}
+
+.normal {
+	background-color: #F5F5F5;
+}

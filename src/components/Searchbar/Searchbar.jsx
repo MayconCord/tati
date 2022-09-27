@@ -10,9 +10,9 @@ function Search(props) {
     }
 
     return(
-        <div className="searchbar-container">
+        <div className="searchbar-container p-5">
             <div className="searchbar">
-                <input inputMode="text" value={input} onChange={onChangeSearch} className='search-label' placeholder="Digite o nome do pokemon"/>
+                <input inputMode="text" value={input} onChange={onChangeSearch} className="form-control" placeholder="Digite o nome do pokemon"/>
             </div>
             <div className="searchbar-btn">
             </div>

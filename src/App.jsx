@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar/Navbar";
 import Searchbar from "./components/Searchbar/Searchbar";
 import Pokedex from "./components/Pokedex/Pokedex";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 
@@ -9,7 +11,7 @@ function App() {
   const [pokemons, setPokemons] = useState([]);
   const [search, setSearch] = useState('');
 
-  const getPokemons = async (limit = 200, offset = 0) => {
+  const getPokemons = async (limit = 150, offset = 0) => {
     try {
         let url = `https://pokeapi.co/api/v2/pokemon?limit=${limit}$offset=${offset}`;
         const response = await fetch(url)
@@ -63,6 +65,7 @@ function App() {
           loading={loading} 
           pokemons={pokemons.filter(pokemon => pokemon.name.includes(search.toLowerCase()))} 
         />
+        <Footer />
       </div>    
     </main>
   )
